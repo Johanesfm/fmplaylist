@@ -41,7 +41,6 @@ function getPlaylistFirst() {
           selectedMonth = selectedMonth - 1;
         }
         getPlaylist();
-        console.log('march 2023 is still empty');
       }
       else {
         // Map a variable called cardContainer to the Webflow element called "Cards-Container"
@@ -91,7 +90,6 @@ function getPlaylist() {
       $('#pl-empty-state').hide();
       if (arr.length === 0) {
         $('#pl-empty-state').show();
-        console.log('get playlist function is empty');
       }
       else {
         // Map a variable called cardContainer to the Webflow element called "Cards-Container"
@@ -293,6 +291,5 @@ $(document).ready(function () {
     $('#search-result-wrapper').hide();
     $('#pl-search').val('');
   });
-  console.log('test');
 
 });
